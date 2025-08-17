@@ -8,7 +8,7 @@ FOREACH(possible_icon_dir ${possible_icon_dirs})
     ENDIF()
 ENDFOREACH()
 
-set(BREEZE_INSTALL_DIR ${KDE_INSTALL_FULL_ICONDIR}/breeze)
+set(BREEZE_INSTALL_DIR ${KDE_INSTALL_FULL_ICONDIR}/breeze-third-party)
 
 if(NOT WIN32 AND NOT SKIP_INSTALL_ICONS)
     add_custom_target(create-app-symlinks ALL
