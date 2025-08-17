@@ -3,7 +3,7 @@
 # Forked by: Smu1zel <lyndenl25@yahoo.com>
 
 pkgname=breeze-third-party-git
-pkgver=6.5
+pkgver=6.18.0.r2355.648bab0f
 pkgrel=1
 pkgdesc='Breeze icon theme for KDE Plasma (with third-party icons).'
 arch=('any')
@@ -11,7 +11,7 @@ url='https://github.com/Smu1zel/breeze-third-party.git'
 license=('LGPL')
 groups=('kf6')
 makedepends=(
-  'extra-cmake-modules-git'
+  'extra-cmake-modules'
   'cmake'
   'git'
   'qt6-tools'
@@ -31,7 +31,7 @@ pkgver(){
 }
 
 build() {
-  cmake -S breeze-icons -B build \
+  cmake -S breeze-third-party -B build \
     -DCMAKE_BUILD_TYPE=None \
     -DCMAKE_INSTALL_PREFIX=/usr \
     -DKDE_INSTALL_CMAKEPACKAGEDIR=/usr/share/cmake \
