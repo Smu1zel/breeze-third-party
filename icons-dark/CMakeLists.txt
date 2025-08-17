@@ -8,7 +8,7 @@ FOREACH(possible_icon_dir ${possible_icon_dirs})
     ENDIF()
 ENDFOREACH()
 
-set(BREEZE_INSTALL_DIR ${KDE_INSTALL_FULL_ICONDIR}/breeze-dark-third-party)
+set(BREEZE_INSTALL_DIR ${KDE_INSTALL_FULL_ICONDIR}/breeze-dark)
 
 set(ICON_GEN_DIR ${CMAKE_BINARY_DIR}/breeze-icons-dark)
 if(WITH_ICON_GENERATION)
